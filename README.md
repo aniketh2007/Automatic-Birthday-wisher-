@@ -1,5 +1,6 @@
 # Automatic Birthday wisher
-The modules used were datetime, smtplib,random,pandas
-The project was to send the the automatic birthday wish to the recevier from the sender on the receivers birthday 
-The project used datetime module to send the email on the receiver's birthday 
-The smtplib module to send the email
+- The Automatic Birthday wisher was developed based on the learning of the datetime module and smtplib. where you can replace the username with your mail id and replace password with app password which you get it when you access the account security and add a new password
+- Step 1: Is to import all the required modules pandas, datetime, random modules. Then using the now() method to get hold of today and access the month and day. Creation of tuple with day and month.
+- Step 2 : Using list comprehension to create key value pair of key must be the day and month and the rest of the data as the values by reading the csv and using iterrows() method to iternate over each rows.
+- Step 3 : Then checking if the there is a match between the values if so then creating a new object birthday_person which can access the birthday_dict and the tuples matched then reading the text files and using randint() method to choose between letters and using replace() method to replace the [NAME] and Angela with the required data and and the have to save it in the original variable of the replace() method.
+- Step 4 : To establish a connection with the email server choosen is gmail hence it is smtp.gmail.com and using with keyword to avoid writing close() method at the end and calling the starttls() method to establish Encrpytion of the data and using login() method to login into the user and sendemail() method to send an email in that to add a subject we just add Subject: to the msg parameter and addding double \n to move into the body of the letter the body of the letter is the content of the text files. And can host the entire code into the cloud recommended is python anywhere 
